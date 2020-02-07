@@ -28,11 +28,20 @@ ggplot(net10, showCategory = 50,
   scale_color_viridis_c(guide=guide_colorbar(reverse=FALSE), direction = -1) +
   scale_size_continuous(range=c(2, 10)) +
   theme_minimal() + 
-  xlab("Kinase Prediction Score (NetworKIN)") +
+  xlab("Kinase Prediction Score") +
   ylab(NULL) + 
-  theme(axis.text = element_text(size = 10, colour = 'black')) +
-  theme(axis.title = element_text(size = 12)) +
-  theme(title = element_text(size = 14)) +
-  theme(plot.subtitle = element_text(size = 12)) +
-  ggtitle("Top predicted kinases", subtitle = " From phosphopeptides uniquely upregulated in PI3Ki resistant tumors") 
+  labs(caption = "NetworKIN 3.0; Nat Methods 11, 603–604 (2014)") +
+  theme(axis.text = element_text(size = 12, colour = 'black')) +
+  theme(axis.title = element_text(size = 14)) +
+  theme(title = element_text(size = 18)) +
+  theme(plot.subtitle = element_text(size = 10)) +
+  ggtitle("Top predicted kinases", subtitle = "Phosphopeptides uniquely upregulated in PI3Ki resistant tumors (n=1786)") +
+  theme(plot.caption = element_text(size = 10))
 
+
+  
+  
+  
+  
+  
+  
