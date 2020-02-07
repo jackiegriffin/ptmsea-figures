@@ -14,10 +14,12 @@ df$prot_mod <- paste(df$uniprot,df$modsite, sep = "_")
 
 
 ggplot(df, aes(x=prot_mod, y = kinase, color = log2fc)) + 
-  geom_point() +
-  scale_color_gradient(low="blue", high="red")  +
+  geom_point(shape=15, size =5) +
+  scale_color_gradient(low="red", high="blue")  +
   coord_equal() +
-  theme(axis.text.x = element_text(angle = 90, hjust =1, vjust = 0.5))
+  theme(axis.text.x = element_text(angle = 90, hjust =1, vjust = 0.5, size = 10))
+theme(axis.text.y = element_text(hjust =1, vjust = 0.5, size = 3))
+
   #geom_point(aes(color=log2fc)) +
   #geom_point(aes(shape = as.integer(log2fc))) +
   #scale_shape_identity(2) +
