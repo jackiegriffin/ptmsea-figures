@@ -1,3 +1,7 @@
+## kinase prediction, output sequences + matched sequences and
+# phosphorylated subsrates from raw data 
+# THRESHOLD = kinase prediction score of 
+
 
 
 # start here trying to do heatplot fro stcratch

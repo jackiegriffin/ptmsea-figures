@@ -68,7 +68,6 @@ theme(plot.caption = element_text(size = 10))
 
 
 
-
 #geom_bar(stat='identity', aes(fill=mpg_type), width=.5)  +
  # scale_fill_manual(name="Mileage", 
   #                  labels = c("Above Average", "Below Average"), 
